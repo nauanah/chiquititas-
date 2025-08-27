@@ -1,133 +1,142 @@
-/*
-    Paleta de Cores (Estilo Fantasia/Detalhado)
-    - Fundo Principal: Degradê de #0f0c29 para #302b63 (Tons de roxo e azul escuro)
-    - Destaque Roxo: #9a4c9c (Roxo vibrante)
-    - Destaque Dourado: #ffeb3b (Amarelo dourado)
-    - Texto Principal: #e9e9e9 (Cinza claro)
-    - Borda/Sombra: #5c62a8 (Azul-violeta)
-*/
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiquititas - Fã Clube!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/pt/thumb/d/d4/Logo_Chiquititas_SBT.png/200px-Logo_Chiquititas_SBT.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images.png" alt="Logo Chiquititas" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#resumo">A História</a></li>
+                    <li><a href="#personagens">Personagens</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Uma Nova Vida no Orfanato Raio de Luz!</h1>
+                <p>Junte-se à jornada de amizade, música e sonhos!</p>
+                <a href="#resumo" class="cta-button">Descubra Mais!</a>
+            </div>
+        </section>
 
-body {
-    font-family: 'Cinzel', serif;
-    background: linear-gradient(135deg, #0f0c29 0%, #302b63 100%);
-    background-attachment: fixed;
-    color: #e9e9e9;
-    margin: 0;
-    line-height: 1.6;
-}
+        <aside class="accessibility-box" aria-label="Menu de Acessibilidade">
+            <button id="accessibility-toggle" aria-expanded="false" aria-controls="accessibility-options" title="Acessibilidade">
+                Acessibilidade
+            </button>
+            <div id="accessibility-options" class="options-container">
+                <h2>Acessibilidade</h2>
+                <div class="font-size-controls">
+                    <span>Tamanho da Fonte:</span>
+                    <button id="increase-font" aria-label="Aumentar fonte">A+</button>
+                    <button id="decrease-font" aria-label="Diminuir fonte">A-</button>
+                </div>
+                <div class="theme-controls">
+                    <span>Tema:</span>
+                    <button id="toggle-theme" aria-label="Alternar tema claro/escuro">
+                        <span class="light-icon">☀️</span> <span class="dark-icon" style="display:none;">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
 
-.header {
-    background: rgba(15, 12, 41, 0.7);
-    color: #ffeb3b;
-    text-align: center;
-    padding: 4rem 1rem;
-    border-bottom: 3px solid #9a4c9c;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-}
+        <section id="resumo" class="section-content">
+            <div class="container">
+                <h2>A História</h2>
+                <div class="summary-content">
+                    <p>
+                        "Chiquititas" nos apresenta à história de um grupo de crianças que vivem no Orfanato Raio de Luz, sob a tutela da rígida, mas no fundo bondosa, Diretora Sofia. A vida no orfanato muda completamente com a chegada de Mili e suas amigas, que usam a música e a esperança para transformar o ambiente em um lar cheio de alegria. A trama se desenrola com a busca por laços familiares, segredos do passado e o surgimento de novas amizades, mostrando que o amor pode superar qualquer dificuldade.
+                    </p>
+                    <img src="chiqui.jpg" alt="Crianças no Orfanato Raio de Luz" loading="lazy">
+                </div>
+            </div>
+        </section>
+        
+        <section id="personagens" class="section-content highlight-section">
+            <div class="container">
+                <h2>Quem Faz a Magia Acontecer</h2>
+                <div class="character-row">
+                    <div class="character-info">
+                        <h3>Mili</h3>
+                        <p>A sonhadora e líder das chiquititas. Sempre gentil e otimista, Mili inspira todos ao seu redor com sua voz e seu coração enorme.</p>
+                    </div>
+                    <img src="Mili.webp" alt="Personagem Mili" loading="lazy">
+                </div>
+                <div class="character-row reverse">
+                    <img src="Pata.webp" alt="Personagem Pata" loading="lazy">
+                    <div class="character-info">
+                        <h3>Pata</h3>
+                        <p>A garota de rua de coração forte. Protetora e leal, Pata é uma das mais corajosas e está sempre pronta para defender suas amigas.</p>
+                    </div>
+                </div>
+                <div class="character-row">
+                    <div class="character-info">
+                        <h3>Cris</h3>
+                        <p>Meiga e inteligente. Cris tem uma imaginação fértil e é conhecida por sua bondade e a esperança que nunca a abandona.</p>
+                    </div>
+                    <img src="cris.jpg" alt="Personagem Cris" loading="lazy">
+                </div>
+                <div class="character-row reverse">
+                    <img src="mosca.webp" alt="Personagem Mosca" loading="lazy">
+                    <div class="character-info">
+                        <h3>Mosca</h3>
+                        <p>O protetor do orfanato. Apesar da pose de durão, Mosca é um grande amigo e vive se metendo em confusões com Binho.</p>
+                    </div>
+                </div>
+                <div class="character-row">
+                    <div class="character-info">
+                        <h3>Rafa</h3>
+                        <p>Engraçado e otimista, Rafa é o palhaço da turma. Com seu jeito alegre, ele está sempre tentando fazer os amigos rirem.</p>
+                    </div>
+                    <img src="rafa.jpg" alt="Personagem Rafa" loading="lazy">
+                </div>
+            </div>
+        </section>
 
-.header h1 {
-    font-size: 4em;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 0 10px #ffeb3b, 0 0 20px #9a4c9c;
-    animation: glow-text 1.5s infinite alternate;
-}
+        <section id="contato" class="section-content contact-section">
+            <div class="container">
+                <h2>Fale Conosco!</h2>
+                <div class="contact-box">
+                    <form action="#" method="post" class="contact-form">
+                        <p>Mande sua mensagem ou diga oi para o Orfanato!</p>
+                        <div class="form-group">
+                            <label for="name">Seu Nome:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Seu E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-@keyframes glow-text {
-    from { text-shadow: 0 0 5px #ffeb3b; }
-    to { text-shadow: 0 0 10px #ffeb3b, 0 0 20px #9a4c9c; }
-}
+    </main>
 
-.header p {
-    font-style: italic;
-    color: #d1c7e0;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    display: grid;
-    gap: 2rem;
-}
-
-.card {
-    background: rgba(48, 43, 99, 0.8);
-    border-radius: 15px;
-    padding: 2.5rem;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-    border: 2px solid #5c62a8;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
-}
-
-.card h2 {
-    color: #ffeb3b;
-    border-bottom: 2px solid #9a4c9c;
-    padding-bottom: 0.5rem;
-    margin-top: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.character-list,
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.character-item {
-    text-align: center;
-}
-
-.character-item img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #ffeb3b;
-    box-shadow: 0 0 10px #9a4c9c;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-}
-
-.character-item img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px #ffeb3b;
-}
-
-.gallery img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    border: 3px solid #5c62a8;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
-}
-
-.footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: #0f0c29;
-    border-top: 1px solid #5c62a8;
-    margin-top: 2rem;
-}
-
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2.5em;
-    }
-}
+    <footer>
+        <div class="container">
+            <p>&copy; Chiquititas. Todos os direitos ao G.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
