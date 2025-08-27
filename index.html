@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiquititas - Fã Clube!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/pt/thumb/d/d4/Logo_Chiquititas_SBT.png/200px-Logo_Chiquititas_SBT.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images.png" alt="Logo Chiquititas" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#resumo">A História</a></li>
+                    <li><a href="#personagens">Personagens</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Uma Nova Vida no Orfanato Raio de Luz!</h1>
+                <p>Junte-se à jornada de amizade, música e sonhos!</p>
+                <a href="#resumo" class="cta-button">Descubra Mais!</a>
+            </div>
+        </section>
+
+        <aside class="accessibility-box" aria-label="Menu de Acessibilidade">
+            <button id="accessibility-toggle" aria-expanded="false" aria-controls="accessibility-options" title="Acessibilidade">
+                Acessibilidade
+            </button>
+            <div id="accessibility-options" class="options-container">
+                <h2>Acessibilidade</h2>
+                <div class="font-size-controls">
+                    <span>Tamanho da Fonte:</span>
+                    <button id="increase-font" aria-label="Aumentar fonte">A+</button>
+                    <button id="decrease-font" aria-label="Diminuir fonte">A-</button>
+                </div>
+                <div class="theme-controls">
+                    <span>Tema:</span>
+                    <button id="toggle-theme" aria-label="Alternar tema claro/escuro">
+                        <span class="light-icon">☀️</span> <span class="dark-icon" style="display:none;">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <section id="resumo" class="section-content">
+            <div class="container">
+                <h2>A História</h2>
+                <div class="summary-content">
+                    <p>
+                        "Chiquititas" nos apresenta à história de um grupo de crianças que vivem no Orfanato Raio de Luz, sob a tutela da rígida, mas no fundo bondosa, Diretora Sofia. A vida no orfanato muda completamente com a chegada de Mili e suas amigas, que usam a música e a esperança para transformar o ambiente em um lar cheio de alegria. A trama se desenrola com a busca por laços familiares, segredos do passado e o surgimento de novas amizades, mostrando que o amor pode superar qualquer dificuldade.
+                    </p>
+                    <img src="chiqui.jpg" alt="Crianças no Orfanato Raio de Luz" loading="lazy">
+                </div>
+            </div>
+        </section>
+        
+        <section id="personagens" class="section-content highlight-section">
+            <div class="container">
+                <h2>Quem Faz a Magia Acontecer</h2>
+                <div class="character-row">
+                    <div class="character-info">
+                        <h3>Mili</h3>
+                        <p>A sonhadora e líder das chiquititas. Sempre gentil e otimista, Mili inspira todos ao seu redor com sua voz e seu coração enorme.</p>
+                    </div>
+                    <img src="Mili.webp" alt="Personagem Mili" loading="lazy">
+                </div>
+                <div class="character-row reverse">
+                    <img src="Pata.webp" alt="Personagem Pata" loading="lazy">
+                    <div class="character-info">
+                        <h3>Pata</h3>
+                        <p>A garota de rua de coração forte. Protetora e leal, Pata é uma das mais corajosas e está sempre pronta para defender suas amigas.</p>
+                    </div>
+                </div>
+                <div class="character-row">
+                    <div class="character-info">
+                        <h3>Cris</h3>
+                        <p>Meiga e inteligente. Cris tem uma imaginação fértil e é conhecida por sua bondade e a esperança que nunca a abandona.</p>
+                    </div>
+                    <img src="cris.jpg" alt="Personagem Cris" loading="lazy">
+                </div>
+                <div class="character-row reverse">
+                    <img src="mosca.webp" alt="Personagem Mosca" loading="lazy">
+                    <div class="character-info">
+                        <h3>Mosca</h3>
+                        <p>O protetor do orfanato. Apesar da pose de durão, Mosca é um grande amigo e vive se metendo em confusões com Binho.</p>
+                    </div>
+                </div>
+                <div class="character-row">
+                    <div class="character-info">
+                        <h3>Rafa</h3>
+                        <p>Engraçado e otimista, Rafa é o palhaço da turma. Com seu jeito alegre, ele está sempre tentando fazer os amigos rirem.</p>
+                    </div>
+                    <img src="rafa.jpg" alt="Personagem Rafa" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section-content contact-section">
+            <div class="container">
+                <h2>Fale Conosco!</h2>
+                <div class="contact-box">
+                    <form action="#" method="post" class="contact-form">
+                        <p>Mande sua mensagem ou diga oi para o Orfanato!</p>
+                        <div class="form-group">
+                            <label for="name">Seu Nome:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Seu E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Chiquititas. Todos os direitos ao G.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
